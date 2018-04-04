@@ -29,9 +29,7 @@ bot.on("message", async message => {
         .setThumbnail(icon)
         .addField("!serverinfo", "Información acerca del servidor")
         .addField("!help", "Lista de comandos")
-        .addField("!posicion", "Te dice de que posicion tienes que jugar la proxima partida")
-        .addField("!LuisJuega", "¿Qué proximo campeón jugará Luis?")
-        .addField("!luis", "Las frases de Luis! Ahora en tu servidor de confianza!");
+ 
 
         message.reply("Te he enviado un mensaje con los comandos.");
         return message.author.send(helpMessage);
@@ -95,24 +93,6 @@ bot.on("message", async message => {
         
     }
 
-
-
-
-    // if(cmd === `${prefix}luis`){
-    //     var items = Array("Soy main Yasuo, confia en mi", "JODERRRRRRRRRRR", "Reformed", "El fortnite es una mierda", "0/10, ahora comienza el power spike!", "Puto jungla que no gankea");
-    //     var item = items[Math.floor(Math.random()*items.length)];
-    //     message.channel.send(item);
-    // }
-    // if(cmd === `${prefix}LuisJuega`){
-    //     var items = Array("Yasuo", "Tryndamere", "Jhin", "Kai`sa", "Rengar", "Kalista", "Draven");
-    //     var item = items[Math.floor(Math.random()*items.length)];
-    //     message.channel.send("Me apetece jugar "+item);
-    // }
-    // if(cmd === `${prefix}posicion`){
-    //     var items = Array("Top", "Jungla", "Mid", "ADC", "Support");
-    //     var item = items[Math.floor(Math.random()*items.length)];
-    //     message.reply("Tienes que jugar de "+item);
-    // }
 });
 
 
