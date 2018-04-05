@@ -74,24 +74,7 @@ bot.on("message", async message => {
         
     }
     //set roles
-    if(cmd === `${prefix}rol`){
-        
-            message.channel.send(args);
-
-            let image = new Discord.RichEmbed()
-            .setImage("http://ultraumbral.com/images/title.png");
-            message.channel.send(image);
-        
-    }
-    if(cmd === `${prefix}js`){
-        var url = "http://ultraumbral.com/images/gif/";
-
-        let web = new Discord.RichEmbed()
-        .setURL("http://ultraumbral.com")
-        .setImage(url+"weavile.gif")
-        message.channel.send(web);
-        
-    }
+  
 
 });
 
